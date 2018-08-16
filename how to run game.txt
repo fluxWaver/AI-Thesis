@@ -1,3 +1,7 @@
-java -jar C:\Users\riceb\Desktop\game.jar
+java -jar C:\Users\riceb\Desktop\game.jar (FOR ANDRE'S COMPUTER ONLY)
+
+
+For all others, use:
+java -jar C:\path to file\game.jar
 
 Can be used in cmd to run game.jar executable file
