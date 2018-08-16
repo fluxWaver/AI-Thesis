@@ -1,0 +1,178 @@
+/**
+ * 
+ */
+package mainPackage;
+
+import java.util.Scanner;
+
+/**
+ * @author riceb
+ *
+ */
+
+public class Driver2update 
+{
+	public Driver2update() 
+	{
+
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("You are driving at night down a solitary road in the middle of nowhere.");
+		System.out.println("Your car runs out of gas. Do you continue to walk along the road,");
+		System.out.println("or walk into the woods beside the road?");
+		System.out.println("");
+		System.out.println("(type 'road' or 'woods')");
+		String one = sc.nextLine();
+		System.out.println("");
+
+			if((one).equals("road"))
+			{
+				System.out.println("You chose to continue along the road.");
+				System.out.println("You walk until you find a small shack on the road. Do you go inside");
+				System.out.println("Or continue walking along the road?");
+				System.out.println("");
+				System.out.println("(type 'road' or 'shack')");
+				String two = sc.nextLine();
+				System.out.println("");
+				
+				if((two).equals("road"))
+				{
+					System.out.println("You chose to continue along the road.");
+					System.out.println("After a while, you see the headlights of a car driving towards you.");
+					System.out.println("Do you try to wave down the driver, or continue on the road?");
+					System.out.println("");
+					System.out.println("(type 'road' or 'wave down')");
+					String three = sc.nextLine();
+					System.out.println("");
+					
+					if((three).equals("road"))
+					{
+						System.out.println("You chose to continue along the road.");
+						System.out.println("You keep walking and walking, but don't find anything.");
+						System.out.println("After a long time of walking, you start to lose your sense of direction.");
+						System.out.println("You collapse from exhaustion, completely alone.");
+						System.out.println("YOU LOSE");
+					}
+					
+					else if((three).equals("wave down"))
+					{
+						System.out.println("You chose to wave the car down.");
+						System.out.println("To your relief, the car notices you and slows down.");
+						System.out.println("The driver is an elderly man. He doesn't explain why he's here,");
+						System.out.println("yet he still offers to take you with him.");
+						System.out.println("Do you get in, or continue along the road?");
+						System.out.println("");
+						System.out.println("(type 'get in' or 'road')");
+						String four = sc.nextLine();
+						System.out.println("");
+						
+						if((four).equals("get in"))
+						{
+							System.out.println("You chose to get in the car.");
+							System.out.println("As you and the man are driving, you pass your car");
+							System.out.println("on the side of the road, out of gas.");
+							System.out.println("You explain your situation to the man.");
+							System.out.println("He decides to let you siphon some of his gas to your car.");
+							System.out.println("Thanks to the old man, you are able to continue driving.");
+							System.out.println("YOU WIN");
+						}
+						
+						else if((four).equals("road"))
+						{
+							System.out.println("You chose to continue along the road.");
+							System.out.println("You thank the driver and continue walking.");
+							System.out.println("You keep walking and walking, but don't find anything.");
+							System.out.println("After a long time of walking, you start to lose your sense of direction.");
+							System.out.println("You collapse from exhaustion, completely alone.");
+							System.out.println("YOU LOSE");
+						}
+					}
+				}
+				
+				else if((two).equals("shack"))
+				{
+					System.out.println("You chose to go in the shack.");
+					System.out.println("It looks like somebody used to live in the shack, but now it's abandoned.");
+					System.out.println("Among other things, you find a gas canister that has some gas in it.");
+					System.out.println("You take it, walk back to your car and fill it up.");
+					System.out.println("The car turns on, and you are able to continue on your way.");
+					System.out.println("YOU WIN");
+				}
+			}
+			
+			else if((one).equals("woods"))
+			{
+				System.out.println("You chose to go into the woods.");
+				System.out.println("As you walk along, you find that it is very difficult to see.");
+				System.out.println("After some time, you very nearly walk directly into a well.");
+				System.out.println("You have no idea why there's a well in these woods. There's ");
+				System.out.println("no sign of civilization anywhere.");
+				System.out.println("You peer into the well. From what you can tell, the well is totally dry.");
+				System.out.println("There is an old rusty ladder leading into it.");
+				System.out.println("Do you go down, or continue into the woods?");
+				System.out.println("");
+				System.out.println("(type 'go down' or 'woods')");
+				String two = sc.nextLine();
+				System.out.println("");
+				
+				if((two).equals("go down"))
+				{
+					System.out.println("You chose to go down into the well.");
+					System.out.println("You begin to climb down the ladder.");
+					System.out.println("Eventually, you look down, and you are able to see the bottom.");
+					System.out.println("However, as you look, the rusty ladder breaks at the top.");
+					System.out.println("You and the ladder fall into the well. It takes some time for you to come to your senses.");
+					System.out.println("Your heart sinks as you realize there's no way out.");
+					System.out.println("YOU LOSE");
+				}
+				
+				else if((two).equals("woods"))
+				{
+					System.out.println("You chose to continue into the woods and pass the well.");
+					System.out.println("You begin to feel tired and dejected, as there's nothing but");
+					System.out.println("trees all around.");
+					System.out.println("You suddenly happen upon a house. You have no idea why it's in the");
+					System.out.println("middle of the woods, but it appears to be well taken care of.");
+					System.out.println("Do you go in, or continue into the woods?");
+					System.out.println("");
+					System.out.println("(type 'go in' or 'woods')");
+					String three = sc.nextLine();
+					System.out.println("");
+					
+					if((three).equals("go in"))
+					{
+						System.out.println("You chose to go into the house.");
+						System.out.println("The door is locked.");
+						System.out.println("You feel fatigued, and against all reason, you decide to knock.");
+						System.out.println("At first, nobody answers. You are about to leave, when suddenly you hear");
+						System.out.println("the door open.");
+						System.out.println("A middle-aged woman is at the door. She has obviously just woken up.");
+						System.out.println("You are very surprised when she invites you in and allows you to stay");
+						System.out.println("until daytime.");
+						System.out.println("");
+						System.out.println("Upon waking up, the lady leads you back to the road, with a gas container.");
+						System.out.println("in hand.");
+						System.out.println("You fill up your car, thank her, and drive off.");
+						System.out.println("YOU WIN");
+					}
+					
+					else if((three).equals("woods"))
+					{
+						System.out.println("You chose to continue into the woods and pass the house.");
+						System.out.println("After a long time of walking, you still have not found anything.");
+						System.out.println("You see the light of the sun rising, however you still can't find anything.");
+						System.out.println("You continue walking. You are totally surrounded by trees.");
+						System.out.println("Despite being in broad daylight by now, you realize you are totally lost.");
+						System.out.println("YOU LOSE");
+					}
+				}
+			}
+	}
+}
+
